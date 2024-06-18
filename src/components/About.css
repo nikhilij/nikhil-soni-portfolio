@@ -1,0 +1,62 @@
+main {
+    text-align: center;
+    width: 100%;
+    background-color: #010511;
+    padding: 20px;
+}
+
+main h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding-top: 50px;
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #00c3ff, #ffff1c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 30px;
+}
+
+.about-card {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 30px;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+}
+
+.about-me {
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-bottom: 20px; /* Reduced margin between paragraphs */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about-me:last-child {
+    margin-bottom: 0; /* Remove margin from the last paragraph */
+}
+
+@media (min-width: 768px) {
+    .about-me {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-me {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    main h1 {
+        margin-top: 100px; /* Add margin-top for small devices */
+    }
+}

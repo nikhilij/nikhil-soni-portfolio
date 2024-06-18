@@ -1,0 +1,129 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background-color: black;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.logo {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.header .logo h2 {
+    display: inline;
+    font-weight: 500;
+    background-image: linear-gradient(to left, #ff6a00, #ee0979);
+    background-size: 500%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: changeBackground 7s ease-in-out infinite;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 50px;
+    list-style: none;  /* Remove the bullets */
+    padding: 0;  /* Remove default padding */
+    margin: 0;  /* Remove default margin */
+}
+
+nav ul li {
+    padding: 5px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #ec008c, #fc6767);
+    background-size: 500%;
+    color: transparent;
+    animation: changeBackground 4s ease-in-out infinite;
+    -webkit-background-clip: text;
+    cursor: pointer;
+}
+
+
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 2s ease;
+}
+
+@media (max-width: 872px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+
+    nav.open {
+        transform: translateX(0);
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        width: 100%;
+    }
+}

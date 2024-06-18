@@ -1,0 +1,194 @@
+.footer {
+    /* background-color: #010511; */
+    color: white;
+    padding: 40px;
+    text-align: center;
+    background: #c31432;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #ee0979;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    /* Adjust gap between cards */
+    max-width: 1200px;
+    /* Adjust maximum width as needed */
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.card {
+    background-color: #1b1e34;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    flex: 1;
+    text-align: left;
+}
+
+textarea {
+    resize: none;
+    /* Prevent resizing of the textarea */
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2a2d3e;
+    color: white;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+.card2 {
+    background-color: #1b1e34;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+}
+
+.card2 .card-content {
+    padding: 20px;
+    text-align: center;
+    /* Center text within card */
+}
+
+.card2 h3 {
+    position: relative;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+
+.social-links {
+    margin-top: 10px;
+    /* border: 1px solid white; */
+    text-align: center;
+    /* Center align icons if desired */
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    transition: transform 0.3s;
+    text-decoration: none;
+    /* Smooth transition for scaling effect */
+}
+
+.social-links img {
+    width: 48px;
+    /* Set the SVG size */
+    transition: transform 0.3s;
+    /* Smooth transition for scaling effect */
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+    /* Scale up on hover */
+}
+
+#twitter{
+    background-size: 20%;
+    background-color: white;
+    border-width: .2px;
+    border-radius: 10px;
+}
+
+.footer-info {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-info p strong {
+    display: inline-block;
+    width: 120px;
+    /* Adjust as needed for spacing */
+    font-weight: bold;
+    color: #ff6a00;
+    /* Color for label */
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}

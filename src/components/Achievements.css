@@ -1,0 +1,67 @@
+.achievements-section {
+    padding: 20px;
+    background-color: #0a192f; /* Darker shade for better contrast */
+    text-align: center;
+    color: white;
+    padding-bottom: 5%;
+}
+
+.achievements-section h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #00c3ff, #ffff1c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 30px;
+}
+
+.achievements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.achievement-card {
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+    backdrop-filter: blur(10px); /* Blur effect for see-through style */
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33% - 40px); /* Adjust width based on the gap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth shadow transition */
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+.number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00c3ff; /* Bright blue to match the gradient */
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .achievement-card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .achievement-card {
+        width: calc(100% - 40px);
+        margin-bottom: 20px; /* Add space between stacked cards on small screens */
+    }
+}
